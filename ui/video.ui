@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form</class>
- <widget class="QWidget" name="Form">
+ <class>Video</class>
+ <widget class="QWidget" name="Video">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -32,7 +32,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBox">
+   <widget class="QComboBox" name="recording_screen_selection">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -57,7 +57,7 @@
      </property>
     </item>
    </widget>
-   <widget class="QComboBox" name="comboBox_2">
+   <widget class="QComboBox" name="recording_selection">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -96,7 +96,7 @@
       <height>51</height>
      </rect>
     </property>
-    <widget class="QLineEdit" name="lineEdit">
+    <widget class="QLineEdit" name="timer">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -109,7 +109,7 @@
       <string>00：00：00</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="start">
      <property name="geometry">
       <rect>
        <x>130</x>
@@ -122,7 +122,7 @@
       <string>开始</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QPushButton" name="stop">
      <property name="geometry">
       <rect>
        <x>200</x>
@@ -162,7 +162,7 @@
      <string>截图路径</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="save_path_show">
     <property name="geometry">
      <rect>
       <x>530</x>
@@ -172,7 +172,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_3">
+   <widget class="QLineEdit" name="shot_save_path_show">
     <property name="geometry">
      <rect>
       <x>530</x>
@@ -195,7 +195,7 @@
      <string>截屏</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="screen_shot">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -298,10 +298,10 @@
     <widget class="QTabWidget" name="tabWidget">
      <property name="geometry">
       <rect>
-       <x>200</x>
-       <y>60</y>
-       <width>451</width>
-       <height>251</height>
+       <x>140</x>
+       <y>10</y>
+       <width>541</width>
+       <height>351</height>
       </rect>
      </property>
      <property name="mouseTracking">
@@ -319,20 +319,23 @@
      <property name="autoFillBackground">
       <bool>false</bool>
      </property>
+     <property name="tabPosition">
+      <enum>QTabWidget::West</enum>
+     </property>
      <property name="tabShape">
       <enum>QTabWidget::Rounded</enum>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>4</number>
      </property>
      <property name="elideMode">
       <enum>Qt::ElideNone</enum>
      </property>
      <property name="usesScrollButtons">
-      <bool>true</bool>
+      <bool>false</bool>
      </property>
      <property name="documentMode">
-      <bool>true</bool>
+      <bool>false</bool>
      </property>
      <property name="movable">
       <bool>false</bool>
@@ -340,27 +343,27 @@
      <property name="tabBarAutoHide">
       <bool>false</bool>
      </property>
-     <widget class="QWidget" name="tab">
+     <widget class="QWidget" name="video_dir">
       <attribute name="title">
        <string>视频</string>
       </attribute>
      </widget>
-     <widget class="QWidget" name="tab_3">
+     <widget class="QWidget" name="shot_dir">
       <attribute name="title">
        <string>截图</string>
       </attribute>
      </widget>
-     <widget class="QWidget" name="tab_4">
+     <widget class="QWidget" name="camera">
       <attribute name="title">
        <string>摄像头</string>
       </attribute>
      </widget>
-     <widget class="QWidget" name="tab_5">
+     <widget class="QWidget" name="setting">
       <attribute name="title">
        <string>设置</string>
       </attribute>
      </widget>
-     <widget class="QWidget" name="tab_2">
+     <widget class="QWidget" name="other_tools">
       <attribute name="title">
        <string>其他工具</string>
       </attribute>

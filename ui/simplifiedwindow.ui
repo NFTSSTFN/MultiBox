@@ -1,95 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form</class>
- <widget class="QWidget" name="Form">
+ <class>SimplifiedWindow</class>
+ <widget class="QMainWindow" name="SimplifiedWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>772</width>
-    <height>153</height>
+    <width>743</width>
+    <height>179</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>MainWindow</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
-   <property name="geometry">
-    <rect>
-     <x>230</x>
-     <y>50</y>
-     <width>61</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>拾色器</string>
-   </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>66</y>
+      <width>711</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="note_book">
+       <property name="text">
+        <string>笔记本</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="recording">
+       <property name="text">
+        <string>录音</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="screen_recording">
+       <property name="text">
+        <string>录屏</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="screen_shot">
+       <property name="text">
+        <string>截屏</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="video_clip">
+       <property name="text">
+        <string>视频剪辑</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="audio_clips">
+       <property name="text">
+        <string>音频剪辑</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="color_picker">
+       <property name="text">
+        <string>拾色器</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="reader">
+       <property name="text">
+        <string>阅读器</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="main_window">
+       <property name="text">
+        <string>主界面</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
-   <property name="geometry">
-    <rect>
-     <x>90</x>
-     <y>50</y>
-     <width>61</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>录音</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_3">
-   <property name="geometry">
-    <rect>
-     <x>160</x>
-     <y>50</y>
-     <width>61</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>录屏</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_4">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>50</y>
-     <width>61</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>笔记本</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_5">
-   <property name="geometry">
-    <rect>
-     <x>300</x>
-     <y>50</y>
-     <width>61</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>阅读器</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_6">
-   <property name="geometry">
-    <rect>
-     <x>370</x>
-     <y>50</y>
-     <width>61</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>截屏</string>
-   </property>
+  <widget class="QDockWidget" name="dockWidget">
+   <attribute name="dockWidgetArea">
+    <number>8</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QStackedWidget" name="stackedWidget">
+       <widget class="QWidget" name="page"/>
+       <widget class="QWidget" name="page_2"/>
+      </widget>
+     </item>
+    </layout>
+   </widget>
   </widget>
  </widget>
  <resources/>
