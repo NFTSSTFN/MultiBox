@@ -2,41 +2,50 @@
 from PySide2 import QtCore,QtGui,QtWidgets
 from PySide2.QtWidgets import *
 from PySide2.QtGui import *
+
 from ui.ui_mainwindow import Ui_MainWindow
+
+from control.subpage import *
 
 
 class MainWindow(QMainWindow,Ui_MainWindow):
+    Main_Signal = Signal(str)
     def __init__(self):
         super(MainWindow, self).__init__()
         self.setupUi(self)
         self.show()
 
-        self.draw_style()
+        self.Video = None
+        self.CodeExport = None
+
+        self.draw_style()   # 样式函数
+
+        self.screen_recording.clicked.connect(lambda: self.window_change('screen_recording'))
+        self.code_export.clicked.connect(lambda: self.window_change('code_export'))
 
     def draw_style(self):
-        model = QStandardItemModel()
-        self.treeView.setModel(model)
+        '''界面ui绘制'''
+        pass
 
-        root = model.invisibleRootItem()
+    def window_change(self,status):
+        '''子窗体切换'''
+        if status == 'screen_recording':
+            if self.Video == None:
+                self.Video = Video()  # 录屏窗体
+                self.stackedWidget.addWidget(self.Video)
+                self.stackedWidget.setCurrentWidget(self.Video)
+                print(self.Video)
+            else:
+                print(self.Video)
+                self.stackedWidget.setCurrentWidget(self.Video)
+        elif status == 'code_export':
+            if self.CodeExport == None:   # 代码导出窗体
+                self.CodeExport = CodeExport()
+                self.stackedWidget.addWidget(self.CodeExport)
+                self.stackedWidget.setCurrentWidget(self.CodeExport)
+            else:
+                self.stackedWidget.setCurrentWidget(self.CodeExport)
 
-        # 添加“姓名”节点的子节点
-        zhangsan_item = QStandardItem('张三')
-        item1 = QStandardItem('张三')
-        item2 = QStandardItem('李四')
-        item3 = QStandardItem('王五')
-        zhangsan_item.appendRow(item1)
-        zhangsan_item.appendRow(item2)
-        zhangsan_item.appendRow(item3)
-        root.appendRow(zhangsan_item)
-
-        root.appendRow(QStandardItem('李四'))
-        root.appendRow(QStandardItem('王五'))
-
-        # 添加“性别”节点的子节点
-        gender_item = QStandardItem('性别')
-        gender_item.appendRow(QStandardItem('男'))
-        gender_item.appendRow(QStandardItem('女'))
-        root.appendRow(gender_item)
-
-        self.treeView.expandAll()
-        self.treeView.setModel(model)
+    def closeEvent(self, event):
+        '''窗体关闭事件'''
+        self.Main_Signal.emit('Main Window Close')

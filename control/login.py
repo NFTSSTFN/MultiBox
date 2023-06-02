@@ -1,17 +1,17 @@
 
+from PySide2.QtWidgets import QWidget, QDesktopWidget
+from PySide2.QtCore import Signal, Qt
 
-from PySide2.QtWidgets import QWidget,QDesktopWidget
-from PySide2.QtCore import Signal,Qt
 import keyboard as kb
 import threading
 import time
+
 from ui.ui_login import Ui_Login
 
-
-
-class Login(QWidget,Ui_Login):
-    '''登录验证'''
+class Login(QWidget, Ui_Login):
+    '''登录页面'''
     signal = Signal(int)
+
     def __init__(self):
         super(Login, self).__init__()
         self.setupUi(self)
@@ -21,9 +21,8 @@ class Login(QWidget,Ui_Login):
         # self.setWindowFlags(Qt.FramelessWindowHint)  # 去边框
         # self.setAttribute(Qt.WA_TranslucentBackground)  # 设置窗口背景透明
 
-
         self.load_animation()
-        
+
         self.t1 = threading.Thread(target=self.listen)
         self.t1.setDaemon(True)
         self.t1.start()
@@ -47,7 +46,8 @@ class Login(QWidget,Ui_Login):
                 self.signal.emit(123456)
                 break
 
-
     def load_animation(self):
         pass
+
+
 

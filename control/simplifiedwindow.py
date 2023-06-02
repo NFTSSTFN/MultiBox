@@ -2,8 +2,10 @@
 
 from PySide2.QtWidgets import QWidget,QDesktopWidget,QMainWindow
 from PySide2 import QtCore,QtGui
+
 from ui.ui_simplifiedwindow import Ui_SimplifiedWindow
-from control.video import Video
+
+from control.subpage import *
 from control.mainwindow import MainWindow
 
 
@@ -14,11 +16,15 @@ class SimplifiedWindow(QMainWindow,Ui_SimplifiedWindow):
         self.show()
         self.center()
 
+        self.MainWindow = None
+        self.Video = None
 
         self.drawing_style()    # 样式函数
 
+
+
         self.screen_recording.clicked.connect(self.screen_recording_excute)     # 屏幕录制
-        self.main_window.clicked.connect(self.main_window_excute)       # 打开主窗口
+        self.main_window.clicked.connect(lambda:self.main_window_excute(None))       # 打开主窗口
 
 
     def center(self):
@@ -42,11 +48,21 @@ class SimplifiedWindow(QMainWindow,Ui_SimplifiedWindow):
 
     def screen_recording_excute(self):
         '''打开屏幕录制窗口'''
-        self.Video = Video()
-        self.stackedWidget.addWidget(self.Video)
-        self.stackedWidget.setCurrentWidget(self.Video)
-        self.dockWidget.show()
+        if self.Video == None:
+            self.Video = Video()
+            self.stackedWidget.addWidget(self.Video)
+            self.stackedWidget.setCurrentWidget(self.Video)
+            print(self.Video)
+        else:
+            print(self.Video)
+            self.stackedWidget.setCurrentWidget(self.Video)
 
-    def main_window_excute(self):
-        self.MainWindow = MainWindow()
 
+    def main_window_excute(self,status):
+        '''打开主窗口'''
+        if status == None:
+            if self.MainWindow == None:
+                self.MainWindow = MainWindow()
+                self.MainWindow.Main_Signal.connect(self.main_window_excute)
+        else:
+            self.MainWindow = None

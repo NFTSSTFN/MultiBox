@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Serial Communication</title>
+    <style>
+        /* 设置表单样式 */
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 设置输入框样式 */
+        textarea {
+            margin: 10px;
+            padding: 10px;
+            width: 500px;
+            height: 500px;
+            font-size: 16px;
+        }
+
+        /* 设置按钮样式 */
+        input[type="button"] {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="button"]:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <textarea id="text1" placeholder="文本框1" name="text1" readonly></textarea>
+        <textarea id="text2" placeholder="文本框2" name="text2" readonly></textarea>
+        <textarea id="text3" placeholder="文本框3" name="text3" readonly></textarea>
+        <input type="button" value="上一页" onclick="prevPage()" disabled>
+        <input type="button" value="下一页" onclick="nextPage()">
+        <input type="button" value="刷新" onclick="refreshPage()">
+    </form>
+    <script>
+        var current = 0; // 当前文本框索引
+        var texts = []; // 保存所有文本框内容
+
+        // 在页面加载完成后，初始化操作
+        window.onload = function() {
+            // 获取所有文本框的内容，并保存
+            texts.push(document.getElementById("text1").innerHTML);
+            texts.push(document.getElementById("text2").innerHTML);
+            texts.push(document.getElementById("text3").innerHTML);
+            // 隐藏所有文本框，只显示当前文本框
+            hideAllTexts();
+            document.getElementById("text1").style.display = "block";
+            updateButtons();
+        }
+
+        function prevPage() {
+            // 切换至上一页
+            current--;
+            hideAllTexts();
+            document.getElementById("text" + (current + 1)).style.display = "block";
+            updateButtons();
+        }
+
+        function nextPage() {
+            // 切换至下一页
+            current++;
+            hideAllTexts();
+            document.getElementById("text" + (current + 1)).style.display = "block";
+            updateButtons();
+        }
+
+        function refreshPage() {
+            // 刷新当前页
+            // TODO: 读取最新数据，并更新文本框内容
+            texts[current] = "这是刷新后的内容";
+            document.getElementById("text" + (current + 1)).innerHTML = texts[current];
+        }
+
+        function hideAllTexts() {
+            // 隐藏所有文本框
+            for (var i = 1; i <= 3; i++) {
+                document.getElementById("text" + i).style.display = "none";
+            }
+        }
+
+        function updateButtons() {
+            // 更新按钮状态
+            if (current == 0) {
+                // 当前为第一页，禁用上一页按钮
+                document.getElementsByTagName("input")[0].disabled = true;
+            } else {
+                document.getElementsByTagName("input")[0].disabled = false;
+            }
+            if (current == 2) {
+                // 当前为最后一页，禁用下一页按钮
+                document.getElementsByTagName("input")[1].disabled = true;
+            } else {
+                document.getElementsByTagName("input")[1].disabled = false;
+            }
+        }
+    </script>
+</body>
+</html>
