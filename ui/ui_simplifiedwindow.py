@@ -17,56 +17,46 @@ class Ui_SimplifiedWindow(object):
     def setupUi(self, SimplifiedWindow):
         if not SimplifiedWindow.objectName():
             SimplifiedWindow.setObjectName(u"SimplifiedWindow")
-        SimplifiedWindow.resize(743, 179)
+        SimplifiedWindow.resize(676, 204)
         self.centralwidget = QWidget(SimplifiedWindow)
         self.centralwidget.setObjectName(u"centralwidget")
-        self.widget = QWidget(self.centralwidget)
-        self.widget.setObjectName(u"widget")
-        self.widget.setGeometry(QRect(11, 66, 711, 30))
-        self.horizontalLayout = QHBoxLayout(self.widget)
+        self.layoutWidget = QWidget(self.centralwidget)
+        self.layoutWidget.setObjectName(u"layoutWidget")
+        self.layoutWidget.setGeometry(QRect(11, 66, 641, 30))
+        self.horizontalLayout = QHBoxLayout(self.layoutWidget)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
-        self.note_book = QPushButton(self.widget)
+        self.note_book = QPushButton(self.layoutWidget)
         self.note_book.setObjectName(u"note_book")
 
         self.horizontalLayout.addWidget(self.note_book)
 
-        self.recording = QPushButton(self.widget)
+        self.recording = QPushButton(self.layoutWidget)
         self.recording.setObjectName(u"recording")
 
         self.horizontalLayout.addWidget(self.recording)
 
-        self.screen_recording = QPushButton(self.widget)
+        self.screen_recording = QPushButton(self.layoutWidget)
         self.screen_recording.setObjectName(u"screen_recording")
 
         self.horizontalLayout.addWidget(self.screen_recording)
 
-        self.screen_shot = QPushButton(self.widget)
+        self.screen_shot = QPushButton(self.layoutWidget)
         self.screen_shot.setObjectName(u"screen_shot")
 
         self.horizontalLayout.addWidget(self.screen_shot)
 
-        self.video_clip = QPushButton(self.widget)
-        self.video_clip.setObjectName(u"video_clip")
-
-        self.horizontalLayout.addWidget(self.video_clip)
-
-        self.audio_clips = QPushButton(self.widget)
-        self.audio_clips.setObjectName(u"audio_clips")
-
-        self.horizontalLayout.addWidget(self.audio_clips)
-
-        self.color_picker = QPushButton(self.widget)
+        self.color_picker = QPushButton(self.layoutWidget)
         self.color_picker.setObjectName(u"color_picker")
 
         self.horizontalLayout.addWidget(self.color_picker)
 
-        self.reader = QPushButton(self.widget)
+        self.reader = QPushButton(self.layoutWidget)
         self.reader.setObjectName(u"reader")
 
         self.horizontalLayout.addWidget(self.reader)
 
-        self.main_window = QPushButton(self.widget)
+        self.main_window = QPushButton(self.layoutWidget)
         self.main_window.setObjectName(u"main_window")
 
         self.horizontalLayout.addWidget(self.main_window)
@@ -103,8 +93,6 @@ class Ui_SimplifiedWindow(object):
         self.recording.setText(QCoreApplication.translate("SimplifiedWindow", u"\u5f55\u97f3", None))
         self.screen_recording.setText(QCoreApplication.translate("SimplifiedWindow", u"\u5f55\u5c4f", None))
         self.screen_shot.setText(QCoreApplication.translate("SimplifiedWindow", u"\u622a\u5c4f", None))
-        self.video_clip.setText(QCoreApplication.translate("SimplifiedWindow", u"\u89c6\u9891\u526a\u8f91", None))
-        self.audio_clips.setText(QCoreApplication.translate("SimplifiedWindow", u"\u97f3\u9891\u526a\u8f91", None))
         self.color_picker.setText(QCoreApplication.translate("SimplifiedWindow", u"\u62fe\u8272\u5668", None))
         self.reader.setText(QCoreApplication.translate("SimplifiedWindow", u"\u9605\u8bfb\u5668", None))
         self.main_window.setText(QCoreApplication.translate("SimplifiedWindow", u"\u4e3b\u754c\u9762", None))

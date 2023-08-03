@@ -6,20 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>743</width>
-    <height>179</height>
+    <width>676</width>
+    <height>204</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>11</x>
       <y>66</y>
-      <width>711</width>
+      <width>641</width>
       <height>30</height>
      </rect>
     </property>
@@ -49,20 +49,6 @@
       <widget class="QPushButton" name="screen_shot">
        <property name="text">
         <string>截屏</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="video_clip">
-       <property name="text">
-        <string>视频剪辑</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="audio_clips">
-       <property name="text">
-        <string>音频剪辑</string>
        </property>
       </widget>
      </item>

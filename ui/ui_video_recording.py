@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'video.ui'
+## Form generated from reading UI file 'video_recording.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -13,12 +13,12 @@ from PySide2.QtGui import *
 from PySide2.QtWidgets import *
 
 
-class Ui_Video(object):
-    def setupUi(self, Video):
-        if not Video.objectName():
-            Video.setObjectName(u"Video")
-        Video.resize(763, 677)
-        self.widget_2 = QWidget(Video)
+class Ui_VideoRecording(object):
+    def setupUi(self, VideoRecording):
+        if not VideoRecording.objectName():
+            VideoRecording.setObjectName(u"VideoRecording")
+        VideoRecording.resize(763, 677)
+        self.widget_2 = QWidget(VideoRecording)
         self.widget_2.setObjectName(u"widget_2")
         self.widget_2.setGeometry(QRect(10, 10, 741, 661))
         self.graphicsView = QGraphicsView(self.widget_2)
@@ -119,42 +119,42 @@ class Ui_Video(object):
         self.other_tools.setObjectName(u"other_tools")
         self.tabWidget.addTab(self.other_tools, "")
 
-        self.retranslateUi(Video)
+        self.retranslateUi(VideoRecording)
 
         self.tabWidget.setCurrentIndex(4)
 
 
-        QMetaObject.connectSlotsByName(Video)
+        QMetaObject.connectSlotsByName(VideoRecording)
     # setupUi
 
-    def retranslateUi(self, Video):
-        Video.setWindowTitle(QCoreApplication.translate("Video", u"Form", None))
-        self.recording_screen_selection.setItemText(0, QCoreApplication.translate("Video", u"\u5168\u5c4f\u5f55\u5236", None))
-        self.recording_screen_selection.setItemText(1, QCoreApplication.translate("Video", u"\u533a\u57df\u5f55\u5236", None))
-        self.recording_screen_selection.setItemText(2, QCoreApplication.translate("Video", u"\u53ea\u5f55\u6444\u50cf\u5934", None))
+    def retranslateUi(self, VideoRecording):
+        VideoRecording.setWindowTitle(QCoreApplication.translate("VideoRecording", u"Form", None))
+        self.recording_screen_selection.setItemText(0, QCoreApplication.translate("VideoRecording", u"\u5168\u5c4f\u5f55\u5236", None))
+        self.recording_screen_selection.setItemText(1, QCoreApplication.translate("VideoRecording", u"\u533a\u57df\u5f55\u5236", None))
+        self.recording_screen_selection.setItemText(2, QCoreApplication.translate("VideoRecording", u"\u53ea\u5f55\u6444\u50cf\u5934", None))
 
-        self.recording_selection.setItemText(0, QCoreApplication.translate("Video", u"\u4ec5\u9ea6\u514b\u98ce", None))
-        self.recording_selection.setItemText(1, QCoreApplication.translate("Video", u"\u4ec5\u7cfb\u7edf\u58f0\u97f3", None))
-        self.recording_selection.setItemText(2, QCoreApplication.translate("Video", u"\u7cfb\u7edf\u4e0e\u9ea6\u514b\u98ce", None))
-        self.recording_selection.setItemText(3, QCoreApplication.translate("Video", u"\u4e0d\u5f55\u5236\u58f0\u97f3", None))
+        self.recording_selection.setItemText(0, QCoreApplication.translate("VideoRecording", u"\u4ec5\u9ea6\u514b\u98ce", None))
+        self.recording_selection.setItemText(1, QCoreApplication.translate("VideoRecording", u"\u4ec5\u7cfb\u7edf\u58f0\u97f3", None))
+        self.recording_selection.setItemText(2, QCoreApplication.translate("VideoRecording", u"\u7cfb\u7edf\u4e0e\u9ea6\u514b\u98ce", None))
+        self.recording_selection.setItemText(3, QCoreApplication.translate("VideoRecording", u"\u4e0d\u5f55\u5236\u58f0\u97f3", None))
 
-        self.timer.setText(QCoreApplication.translate("Video", u"00\uff1a00\uff1a00", None))
-        self.start.setText(QCoreApplication.translate("Video", u"\u5f00\u59cb", None))
-        self.stop.setText(QCoreApplication.translate("Video", u"\u505c\u6b62", None))
-        self.label.setText(QCoreApplication.translate("Video", u"\u4fdd\u5b58\u8def\u5f84", None))
-        self.label_2.setText(QCoreApplication.translate("Video", u"\u622a\u56fe\u8def\u5f84", None))
-        self.label_3.setText(QCoreApplication.translate("Video", u"\u622a\u5c4f", None))
-        self.screen_shot.setText(QCoreApplication.translate("Video", u"\u622a", None))
-        self.pushButton_4.setText(QCoreApplication.translate("Video", u"\u4e0b\u62c9", None))
-        self.pushButton_5.setText(QCoreApplication.translate("Video", u"\u89c6\u9891", None))
-        self.pushButton_6.setText(QCoreApplication.translate("Video", u"\u622a\u56fe", None))
-        self.pushButton_8.setText(QCoreApplication.translate("Video", u"\u6444\u50cf\u5934", None))
-        self.pushButton_9.setText(QCoreApplication.translate("Video", u"\u8bbe\u7f6e", None))
-        self.pushButton_10.setText(QCoreApplication.translate("Video", u"\u5176\u4ed6\u5de5\u5177", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.video_dir), QCoreApplication.translate("Video", u"\u89c6\u9891", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.shot_dir), QCoreApplication.translate("Video", u"\u622a\u56fe", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.camera), QCoreApplication.translate("Video", u"\u6444\u50cf\u5934", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.setting), QCoreApplication.translate("Video", u"\u8bbe\u7f6e", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.other_tools), QCoreApplication.translate("Video", u"\u5176\u4ed6\u5de5\u5177", None))
+        self.timer.setText(QCoreApplication.translate("VideoRecording", u"00\uff1a00\uff1a00", None))
+        self.start.setText(QCoreApplication.translate("VideoRecording", u"\u5f00\u59cb", None))
+        self.stop.setText(QCoreApplication.translate("VideoRecording", u"\u505c\u6b62", None))
+        self.label.setText(QCoreApplication.translate("VideoRecording", u"\u4fdd\u5b58\u8def\u5f84", None))
+        self.label_2.setText(QCoreApplication.translate("VideoRecording", u"\u622a\u56fe\u8def\u5f84", None))
+        self.label_3.setText(QCoreApplication.translate("VideoRecording", u"\u622a\u5c4f", None))
+        self.screen_shot.setText(QCoreApplication.translate("VideoRecording", u"\u622a", None))
+        self.pushButton_4.setText(QCoreApplication.translate("VideoRecording", u"\u4e0b\u62c9", None))
+        self.pushButton_5.setText(QCoreApplication.translate("VideoRecording", u"\u89c6\u9891", None))
+        self.pushButton_6.setText(QCoreApplication.translate("VideoRecording", u"\u622a\u56fe", None))
+        self.pushButton_8.setText(QCoreApplication.translate("VideoRecording", u"\u6444\u50cf\u5934", None))
+        self.pushButton_9.setText(QCoreApplication.translate("VideoRecording", u"\u8bbe\u7f6e", None))
+        self.pushButton_10.setText(QCoreApplication.translate("VideoRecording", u"\u5176\u4ed6\u5de5\u5177", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.video_dir), QCoreApplication.translate("VideoRecording", u"\u89c6\u9891", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.shot_dir), QCoreApplication.translate("VideoRecording", u"\u622a\u56fe", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.camera), QCoreApplication.translate("VideoRecording", u"\u6444\u50cf\u5934", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.setting), QCoreApplication.translate("VideoRecording", u"\u8bbe\u7f6e", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.other_tools), QCoreApplication.translate("VideoRecording", u"\u5176\u4ed6\u5de5\u5177", None))
     # retranslateUi
 

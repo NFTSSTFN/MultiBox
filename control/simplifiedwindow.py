@@ -49,12 +49,10 @@ class SimplifiedWindow(QMainWindow,Ui_SimplifiedWindow):
     def screen_recording_excute(self):
         '''打开屏幕录制窗口'''
         if self.Video == None:
-            self.Video = Video()
+            self.Video = VideoRecording()
             self.stackedWidget.addWidget(self.Video)
             self.stackedWidget.setCurrentWidget(self.Video)
-            print(self.Video)
         else:
-            print(self.Video)
             self.stackedWidget.setCurrentWidget(self.Video)
 
 

@@ -70,6 +70,13 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addWidget(self.reader)
 
+        self.player = QPushButton(self.widget_control)
+        self.player.setObjectName(u"player")
+        sizePolicy.setHeightForWidth(self.player.sizePolicy().hasHeightForWidth())
+        self.player.setSizePolicy(sizePolicy)
+
+        self.verticalLayout.addWidget(self.player)
+
         self.label_3 = QLabel(self.widget_control)
         self.label_3.setObjectName(u"label_3")
         self.label_3.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
@@ -134,7 +141,6 @@ class Ui_MainWindow(object):
         self.verticalLayout.setStretch(0, 1)
         self.verticalLayout.setStretch(1, 1)
         self.verticalLayout.setStretch(2, 1)
-        self.verticalLayout.setStretch(3, 1)
         self.verticalLayout.setStretch(4, 1)
         self.verticalLayout.setStretch(5, 1)
         self.verticalLayout.setStretch(6, 1)
@@ -143,6 +149,7 @@ class Ui_MainWindow(object):
         self.verticalLayout.setStretch(9, 1)
         self.verticalLayout.setStretch(10, 1)
         self.verticalLayout.setStretch(11, 1)
+        self.verticalLayout.setStretch(12, 1)
 
         self.verticalLayout_2.addLayout(self.verticalLayout)
 
@@ -248,6 +255,8 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.widget)
 
+        self.horizontalLayout_3.setStretch(0, 1)
+        self.horizontalLayout_3.setStretch(1, 8)
 
         self.horizontalLayout_4.addLayout(self.horizontalLayout_3)
 
@@ -267,6 +276,7 @@ class Ui_MainWindow(object):
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"\u5b66\u4e60\u4e13\u7528", None))
         self.note_book.setText(QCoreApplication.translate("MainWindow", u"\u7b14\u8bb0\u672c", None))
         self.reader.setText(QCoreApplication.translate("MainWindow", u"\u9605\u8bfb\u5668", None))
+        self.player.setText(QCoreApplication.translate("MainWindow", u"\u64ad\u653e\u5668", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"\u529e\u516c\u4e13\u7528", None))
         self.recording.setText(QCoreApplication.translate("MainWindow", u"\u5f55\u97f3", None))
         self.screen_recording.setText(QCoreApplication.translate("MainWindow", u"\u5f55\u5c4f", None))
