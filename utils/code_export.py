@@ -24,33 +24,50 @@ def dir_process(path,blacklist):
     return tree
 
 def clear_annotation(path):
-    '''清除文件注释，配合dir_process使用'''
-    new = []
-    flag = 0
-    with open(path,'r',encoding='utf8') as f:
-        for i in f.readlines():
-            if i.strip():
-                if "'''" in i:
-                    if len(i.split("'''")) == 3:
+    '''
+    清除文件注释
+    :param path: 文件路径
+    :return: list，包含所有已清除注释的代码
+    '''
+    res = []
+    with open(path, 'r', encoding='utf8') as f:
+        data = f.readlines()
+        num = 0
+        while num < len(data):
+            if not data[num].strip():                   # 空行
+                pass
+            elif data[num].lstrip()[0] == '#':          # 单行#号注释
+                pass
+            elif data[num].lstrip()[0:3] == '"""' and data[num].count('"""') >= 2:      # 单行"""注释
+                pass
+            elif data[num].lstrip()[0:3] == "'''" and data[num].count("'''") >= 2:      # 单行'''注释
+                pass
+
+            elif data[num].lstrip()[0:3] == '"""' and data[num].lstrip()[3] != ')':     # 多行'''注释
+                num += 1
+                while True:
+                    if '"""' in data[num]:
                         break
                     else:
-                        flag += 1
-                    if flag == 2:
-                        flag = 0
-                elif '"""' in i:
-                    if len(i.split('"""')) == 3:
+                        num += 1
+            elif data[num].lstrip()[0:3] == "'''" and data[num].lstrip()[3] != ")":     # 多行"""注释
+                num += 1
+                while True:
+                    if "'''" in data[num]:
                         break
                     else:
-                        flag += 1
-                    if flag == 2:
-                        flag = 0
-                elif flag == 0:
-                    if '#' in i:
-                        if i.strip(i[i.index('#'):]):
-                            new.append(i.split(i[i.index('#'):])[0]+'\n')
+                        num += 1
+            else:
+                if '# ' in data[num]:
+                    res.append(data[num].split('#')[0].rstrip() + '\n')
+                else:
+                    if num == len(data) - 1:
+                        res.append(data[num] + '\n')
                     else:
-                        new.append(i)
-    return new
+                        res.append(data[num])
+
+            num += 1
+    return res
 
 def extract_directory(self, menu, kg):
     '''能够提取tree目录中的结构，暂时没用'''

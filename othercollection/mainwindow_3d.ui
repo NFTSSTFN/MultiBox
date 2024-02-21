@@ -1,0 +1,1815 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Glview</class>
+ <widget class="QWidget" name="Glview">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1679</width>
+    <height>825</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>7</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>TDSIS-PY-3D</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_22">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_21" stretch="5,16,6">
+     <item>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="tabPosition">
+        <enum>QTabWidget::West</enum>
+       </property>
+       <property name="tabShape">
+        <enum>QTabWidget::Rounded</enum>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <property name="movable">
+        <bool>true</bool>
+       </property>
+       <property name="tabBarAutoHide">
+        <bool>false</bool>
+       </property>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>成像信息设置</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_32">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_30" stretch="10,10">
+           <item>
+            <widget class="QWidget" name="widget" native="true">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_51">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_29">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_37">
+                  <item>
+                   <widget class="QPushButton" name="btn_data">
+                    <property name="text">
+                     <string>导入数据</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="t_data"/>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_38">
+                  <item>
+                   <widget class="QPushButton" name="btn_reference">
+                    <property name="text">
+                     <string>导入参比</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="t_reference"/>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_39">
+                  <item>
+                   <widget class="QLabel" name="label">
+                    <property name="text">
+                     <string>折射率：</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="t_refractive">
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_40">
+                  <item>
+                   <widget class="QLabel" name="label_2">
+                    <property name="text">
+                     <string>X步长：</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="t_x_step">
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_41">
+                  <item>
+                   <widget class="QLabel" name="label_3">
+                    <property name="text">
+                     <string>Y步长：</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="t_y_step">
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_42">
+                  <item>
+                   <widget class="QLabel" name="label_4">
+                    <property name="text">
+                     <string>Z步长：</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="t_z_step">
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_43">
+                  <item>
+                   <widget class="QLabel" name="label_7">
+                    <property name="text">
+                     <string>成像模式</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QRadioButton" name="rbtn_transmission">
+                    <property name="text">
+                     <string>透射式</string>
+                    </property>
+                    <attribute name="buttonGroup">
+                     <string notr="true">buttonGroup</string>
+                    </attribute>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QRadioButton" name="rbtn_reflex">
+                    <property name="text">
+                     <string>反射式</string>
+                    </property>
+                    <attribute name="buttonGroup">
+                     <string notr="true">buttonGroup</string>
+                    </attribute>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_44">
+                  <item>
+                   <widget class="QLabel" name="label_8">
+                    <property name="text">
+                     <string>数据类型</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QRadioButton" name="rbtn_old_data">
+                    <property name="text">
+                     <string>原始数据</string>
+                    </property>
+                    <attribute name="buttonGroup">
+                     <string notr="true">buttonGroup_2</string>
+                    </attribute>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QRadioButton" name="rbtn_new_data">
+                    <property name="text">
+                     <string>重构数据</string>
+                    </property>
+                    <attribute name="buttonGroup">
+                     <string notr="true">buttonGroup_2</string>
+                    </attribute>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_45">
+                  <item>
+                   <widget class="QPushButton" name="btn_generate_img">
+                    <property name="text">
+                     <string>生成成像</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="btn_reload_img">
+                    <property name="text">
+                     <string>重载成像</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_46">
+                  <item>
+                   <widget class="QPushButton" name="btn_init">
+                    <property name="text">
+                     <string>初始化</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="btn_screenshot">
+                    <property name="text">
+                     <string>截屏</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="tableWidget">
+             <property name="layoutDirection">
+              <enum>Qt::LeftToRight</enum>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Sunken</enum>
+             </property>
+             <property name="lineWidth">
+              <number>2</number>
+             </property>
+             <property name="midLineWidth">
+              <number>0</number>
+             </property>
+             <property name="verticalScrollBarPolicy">
+              <enum>Qt::ScrollBarAsNeeded</enum>
+             </property>
+             <property name="horizontalScrollBarPolicy">
+              <enum>Qt::ScrollBarAsNeeded</enum>
+             </property>
+             <property name="sizeAdjustPolicy">
+              <enum>QAbstractScrollArea::AdjustIgnored</enum>
+             </property>
+             <property name="autoScrollMargin">
+              <number>16</number>
+             </property>
+             <property name="dragEnabled">
+              <bool>false</bool>
+             </property>
+             <property name="defaultDropAction">
+              <enum>Qt::CopyAction</enum>
+             </property>
+             <property name="alternatingRowColors">
+              <bool>true</bool>
+             </property>
+             <property name="selectionMode">
+              <enum>QAbstractItemView::NoSelection</enum>
+             </property>
+             <property name="selectionBehavior">
+              <enum>QAbstractItemView::SelectItems</enum>
+             </property>
+             <property name="textElideMode">
+              <enum>Qt::ElideMiddle</enum>
+             </property>
+             <property name="verticalScrollMode">
+              <enum>QAbstractItemView::ScrollPerItem</enum>
+             </property>
+             <property name="horizontalScrollMode">
+              <enum>QAbstractItemView::ScrollPerItem</enum>
+             </property>
+             <property name="showGrid">
+              <bool>true</bool>
+             </property>
+             <property name="gridStyle">
+              <enum>Qt::SolidLine</enum>
+             </property>
+             <property name="sortingEnabled">
+              <bool>false</bool>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+             <property name="cornerButtonEnabled">
+              <bool>true</bool>
+             </property>
+             <property name="rowCount">
+              <number>6</number>
+             </property>
+             <property name="columnCount">
+              <number>2</number>
+             </property>
+             <attribute name="horizontalHeaderCascadingSectionResizes">
+              <bool>false</bool>
+             </attribute>
+             <attribute name="horizontalHeaderMinimumSectionSize">
+              <number>25</number>
+             </attribute>
+             <attribute name="horizontalHeaderDefaultSectionSize">
+              <number>117</number>
+             </attribute>
+             <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+              <bool>false</bool>
+             </attribute>
+             <attribute name="horizontalHeaderStretchLastSection">
+              <bool>true</bool>
+             </attribute>
+             <attribute name="verticalHeaderVisible">
+              <bool>false</bool>
+             </attribute>
+             <attribute name="verticalHeaderCascadingSectionResizes">
+              <bool>true</bool>
+             </attribute>
+             <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+              <bool>false</bool>
+             </attribute>
+             <attribute name="verticalHeaderStretchLastSection">
+              <bool>false</bool>
+             </attribute>
+             <row/>
+             <row/>
+             <row/>
+             <row/>
+             <row/>
+             <row/>
+             <column>
+              <property name="text">
+               <string>实际尺寸信息</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="textAlignment">
+               <set>AlignCenter</set>
+              </property>
+              <property name="background">
+               <color>
+                <red>180</red>
+                <green>180</green>
+                <blue>180</blue>
+               </color>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>单位(mm)</string>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="textAlignment">
+               <set>AlignCenter</set>
+              </property>
+              <property name="background">
+               <color>
+                <red>180</red>
+                <green>180</green>
+                <blue>180</blue>
+               </color>
+              </property>
+             </column>
+             <item row="0" column="0">
+              <property name="text">
+               <string>X轴方向长度</string>
+              </property>
+              <property name="textAlignment">
+               <set>AlignCenter</set>
+              </property>
+              <property name="background">
+               <brush brushstyle="NoBrush">
+                <color alpha="255">
+                 <red>194</red>
+                 <green>194</green>
+                 <blue>194</blue>
+                </color>
+               </brush>
+              </property>
+             </item>
+             <item row="0" column="1">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="textAlignment">
+               <set>AlignCenter</set>
+              </property>
+             </item>
+             <item row="1" column="0">
+              <property name="text">
+               <string>Y轴方向长度</string>
+              </property>
+              <property name="textAlignment">
+               <set>AlignCenter</set>
+              </property>
+             </item>
+             <item row="1" column="1">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="textAlignment">
+               <set>AlignCenter</set>
+              </property>
+             </item>
+             <item row="2" column="0">
+              <property name="text">
+               <string>Z轴最大厚度</string>
+              </property>
+              <property name="textAlignment">
+               <set>AlignCenter</set>
+              </property>
+             </item>
+             <item row="2" column="1">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="textAlignment">
+               <set>AlignCenter</set>
+              </property>
+             </item>
+             <item row="3" column="0">
+              <property name="text">
+               <string>Z轴最小厚度</string>
+              </property>
+              <property name="textAlignment">
+               <set>AlignCenter</set>
+              </property>
+             </item>
+             <item row="3" column="1">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="textAlignment">
+               <set>AlignCenter</set>
+              </property>
+             </item>
+             <item row="4" column="0">
+              <property name="text">
+               <string>图像点数信息</string>
+              </property>
+              <property name="textAlignment">
+               <set>AlignCenter</set>
+              </property>
+             </item>
+             <item row="4" column="1">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="textAlignment">
+               <set>AlignCenter</set>
+              </property>
+             </item>
+             <item row="5" column="0">
+              <property name="text">
+               <string>图像尺寸信息</string>
+              </property>
+              <property name="textAlignment">
+               <set>AlignCenter</set>
+              </property>
+             </item>
+             <item row="5" column="1">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="textAlignment">
+               <set>AlignCenter</set>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>成像交互面板</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_33">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_9" stretch="12,4,8,4,1">
+           <item>
+            <widget class="QWidget" name="widget_2" native="true">
+             <layout class="QHBoxLayout" name="horizontalLayout_55">
+              <item>
+               <widget class="QToolBox" name="toolBox">
+                <property name="currentIndex">
+                 <number>0</number>
+                </property>
+                <widget class="QWidget" name="img_scan">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>232</width>
+                   <height>273</height>
+                  </rect>
+                 </property>
+                 <attribute name="label">
+                  <string>图像切片</string>
+                 </attribute>
+                 <layout class="QHBoxLayout" name="horizontalLayout">
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout_6">
+                    <item>
+                     <layout class="QVBoxLayout" name="verticalLayout_7" stretch="0,0">
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_11" stretch="0,0,0">
+                        <item>
+                         <widget class="QLabel" name="label_25">
+                          <property name="text">
+                           <string>X轴切片</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QSpinBox" name="x_value">
+                          <property name="maximum">
+                           <number>99</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_22">
+                          <property name="text">
+                           <string>(X轴点数)</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <widget class="QSlider" name="x_slider_value">
+                        <property name="maximum">
+                         <number>99</number>
+                        </property>
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <layout class="QVBoxLayout" name="verticalLayout_8">
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_12">
+                        <item>
+                         <widget class="QLabel" name="label_26">
+                          <property name="text">
+                           <string>Y轴切片</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QSpinBox" name="y_value">
+                          <property name="maximum">
+                           <number>99</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_23">
+                          <property name="text">
+                           <string>(Y轴点数)</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <widget class="QSlider" name="y_slider_value">
+                        <property name="maximum">
+                         <number>99</number>
+                        </property>
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <layout class="QVBoxLayout" name="verticalLayout_10">
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_13">
+                        <item>
+                         <widget class="QLabel" name="label_27">
+                          <property name="text">
+                           <string>Z轴切片</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QSpinBox" name="z_value">
+                          <property name="maximum">
+                           <number>99</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_24">
+                          <property name="text">
+                           <string>(Z轴点数)</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <widget class="QSlider" name="z_slider_value">
+                        <property name="maximum">
+                         <number>99</number>
+                        </property>
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <layout class="QVBoxLayout" name="verticalLayout_11">
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_14">
+                        <item>
+                         <widget class="QLabel" name="label_28">
+                          <property name="text">
+                           <string>Z轴厚度</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QSpinBox" name="z_thickness_value">
+                          <property name="maximum">
+                           <number>99</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_29">
+                          <property name="text">
+                           <string>(厚度倍数)</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <widget class="QSlider" name="z_thickness_slider_value">
+                        <property name="maximum">
+                         <number>99</number>
+                        </property>
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="img_color">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>207</width>
+                   <height>273</height>
+                  </rect>
+                 </property>
+                 <attribute name="label">
+                  <string>图像色彩</string>
+                 </attribute>
+                 <layout class="QHBoxLayout" name="horizontalLayout_2">
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout">
+                    <item>
+                     <layout class="QVBoxLayout" name="verticalLayout_2">
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_17">
+                        <item>
+                         <widget class="QLabel" name="label_9">
+                          <property name="text">
+                           <string>Red：</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QSpinBox" name="red_value">
+                          <property name="maximum">
+                           <number>255</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_30">
+                          <property name="text">
+                           <string>(0-255)</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <widget class="QSlider" name="red_slider_value">
+                        <property name="maximum">
+                         <number>255</number>
+                        </property>
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <layout class="QVBoxLayout" name="verticalLayout_12">
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_18">
+                        <item>
+                         <widget class="QLabel" name="label_10">
+                          <property name="text">
+                           <string>Green：</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QSpinBox" name="green_value">
+                          <property name="maximum">
+                           <number>255</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_31">
+                          <property name="text">
+                           <string>(0-255)</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <widget class="QSlider" name="green_slider_value">
+                        <property name="maximum">
+                         <number>255</number>
+                        </property>
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <layout class="QVBoxLayout" name="verticalLayout_13">
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_19">
+                        <item>
+                         <widget class="QLabel" name="label_11">
+                          <property name="text">
+                           <string>Blue：</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QSpinBox" name="blue_value">
+                          <property name="maximum">
+                           <number>255</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_32">
+                          <property name="text">
+                           <string>(0-255)</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <widget class="QSlider" name="blue_slider_value">
+                        <property name="maximum">
+                         <number>255</number>
+                        </property>
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <layout class="QVBoxLayout" name="verticalLayout_14">
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_20">
+                        <item>
+                         <widget class="QLabel" name="label_12">
+                          <property name="text">
+                           <string>Alpha：</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QSpinBox" name="alpha_value">
+                          <property name="maximum">
+                           <number>255</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_33">
+                          <property name="text">
+                           <string>(0-255)</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <widget class="QSlider" name="alpha_slider_value">
+                        <property name="maximum">
+                         <number>255</number>
+                        </property>
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_3" native="true">
+             <layout class="QHBoxLayout" name="horizontalLayout_54">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_3">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_3">
+                  <item>
+                   <widget class="QLabel" name="label_37">
+                    <property name="text">
+                     <string>三维X坐标轴轴刻度数：</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="t_axis_x">
+                    <property name="text">
+                     <string>5</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_4">
+                  <item>
+                   <widget class="QLabel" name="label_40">
+                    <property name="text">
+                     <string>三维Y坐标轴轴刻度数：</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="t_axis_y">
+                    <property name="text">
+                     <string>5</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_5">
+                  <item>
+                   <widget class="QLabel" name="label_41">
+                    <property name="text">
+                     <string>三维Z坐标轴轴刻度数：</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="t_axis_z">
+                    <property name="text">
+                     <string>2</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_4" native="true">
+             <layout class="QHBoxLayout" name="horizontalLayout_53">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_4">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_6">
+                  <item>
+                   <widget class="QLabel" name="label_17">
+                    <property name="text">
+                     <string>坐标轴颜色</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="axis_color">
+                    <item>
+                     <property name="text">
+                      <string>红色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>绿色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>蓝色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>青色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>白色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>紫色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>黄色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>青绿色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>棕色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>粉色</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_7">
+                  <item>
+                   <widget class="QLabel" name="label_18">
+                    <property name="text">
+                     <string>文字颜色</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="axis_text_color">
+                    <item>
+                     <property name="text">
+                      <string>红色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>蓝色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>绿色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>青色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>黄色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>白色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>灰色</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_8">
+                  <item>
+                   <widget class="QLabel" name="label_13">
+                    <property name="text">
+                     <string>二维数据色系</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="data_2d_color">
+                    <item>
+                     <property name="text">
+                      <string>plasma</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>thermal</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>flame</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>yellowy</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>bipolar</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>spectrum</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>cyclic</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>greyclip</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>grey</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>viridis</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>inferno</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>magma</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_9">
+                  <item>
+                   <widget class="QLabel" name="label_16">
+                    <property name="text">
+                     <string>二维窗体背景</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="background_2d_color">
+                    <item>
+                     <property name="text">
+                      <string>黑色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>红色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>绿色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>蓝色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>青色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>白色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>紫色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>黄色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>青绿色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>棕色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>粉色</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_15">
+                  <item>
+                   <widget class="QLabel" name="label_5">
+                    <property name="text">
+                     <string>三维数据色系</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="data_3d_color">
+                    <item>
+                     <property name="text">
+                      <string>plasma</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Accent</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Accent_r</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Blues</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Blues_r</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>BuPu</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>BuPu_r</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>CMRmap</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Dark2</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>GnBu</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Greens</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Greys</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Oranges</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>PRGn</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Paired</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Pastel1</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>winter</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>spring</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Wistia</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>afmhot</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>autumn</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>bone</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>cool</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>copper</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>flag</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_16">
+                  <item>
+                   <widget class="QLabel" name="label_15">
+                    <property name="text">
+                     <string>三维窗体背景</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="background_3d_color">
+                    <item>
+                     <property name="text">
+                      <string>黑色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>红色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>绿色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>蓝色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>青色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>白色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>紫色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>黄色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>青绿色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>棕色</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>粉色</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_5" native="true">
+             <layout class="QHBoxLayout" name="horizontalLayout_52">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_48">
+                <item>
+                 <spacer name="horizontalSpacer_4">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_5">
+                  <item>
+                   <widget class="QPushButton" name="output_data">
+                    <property name="text">
+                     <string>导出重构数据</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="output_information">
+                    <property name="text">
+                     <string>导出所有计算信息</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="show_hide_axis">
+                    <property name="text">
+                     <string>显示/隐藏坐标轴</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_3">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>17</width>
+               <height>37</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_3">
+        <attribute name="title">
+         <string>辅助功能</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_28">
+         <item>
+          <widget class="QPushButton" name="setting">
+           <property name="text">
+            <string>默认设置</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="help">
+           <property name="text">
+            <string>帮助</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="about_TDSIS_3d">
+           <property name="text">
+            <string>关于TDSIS-PY-3D</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="GLViewWidget" name="openGLWidget"/>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_31">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_50" stretch="1,2,2">
+         <item>
+          <widget class="QLabel" name="label_61">
+           <property name="text">
+            <string>图像截面切片</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>14</width>
+             <height>17</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_2d_select">
+           <item>
+            <property name="text">
+             <string>XZ</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>YZ</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="GraphicsLayoutWidget" name="graphics_XZ_scan"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_49" stretch="1,2">
+         <item>
+          <widget class="QLabel" name="label_62">
+           <property name="text">
+            <string>图像XY截面切片</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>14</width>
+             <height>17</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="GraphicsLayoutWidget" name="graphics_XY_scan"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_56">
+         <item>
+          <widget class="QLabel" name="label_63">
+           <property name="text">
+            <string>数据时域谱信息</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>X</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="tds_X">
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_8">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>14</width>
+             <height>17</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_14">
+           <property name="text">
+            <string>Y</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="tds_Y">
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_19">
+           <property name="text">
+            <string>时间</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="time_axis">
+           <property name="placeholderText">
+            <string>总ps</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="PlotWidget" name="graphics_tds"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GraphicsLayoutWidget</class>
+   <extends>QGraphicsView</extends>
+   <header>pyqtgraph</header>
+  </customwidget>
+  <customwidget>
+   <class>GLViewWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header location="global">pyqtgraph.opengl</header>
+  </customwidget>
+  <customwidget>
+   <class>PlotWidget</class>
+   <extends>QGraphicsView</extends>
+   <header>pyqtgraph</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroup_2"/>
+ </buttongroups>
+</ui>

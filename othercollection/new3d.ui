@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1845</width>
+    <height>1107</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>1404</x>
+      <y>20</y>
+      <width>301</width>
+      <height>941</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustIgnored</enum>
+    </property>
+    <property name="autoScrollMargin">
+     <number>16</number>
+    </property>
+    <property name="dragEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="defaultDropAction">
+     <enum>Qt::CopyAction</enum>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>true</bool>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::NoSelection</enum>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectItems</enum>
+    </property>
+    <property name="textElideMode">
+     <enum>Qt::ElideMiddle</enum>
+    </property>
+    <property name="verticalScrollMode">
+     <enum>QAbstractItemView::ScrollPerItem</enum>
+    </property>
+    <property name="horizontalScrollMode">
+     <enum>QAbstractItemView::ScrollPerItem</enum>
+    </property>
+    <property name="showGrid">
+     <bool>true</bool>
+    </property>
+    <property name="gridStyle">
+     <enum>Qt::SolidLine</enum>
+    </property>
+    <property name="sortingEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="cornerButtonEnabled">
+     <bool>true</bool>
+    </property>
+    <property name="rowCount">
+     <number>6</number>
+    </property>
+    <property name="columnCount">
+     <number>2</number>
+    </property>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>25</number>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>117</number>
+    </attribute>
+    <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderStretchLastSection">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderCascadingSectionResizes">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderStretchLastSection">
+     <bool>false</bool>
+    </attribute>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column>
+     <property name="text">
+      <string>实际尺寸信息</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <color>
+       <red>180</red>
+       <green>180</green>
+       <blue>180</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>单位(mm)</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <color>
+       <red>180</red>
+       <green>180</green>
+       <blue>180</blue>
+      </color>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string>X轴方向长度</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="NoBrush">
+       <color alpha="255">
+        <red>194</red>
+        <green>194</green>
+        <blue>194</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="1" column="0">
+     <property name="text">
+      <string>Y轴方向长度</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="1" column="1">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="2" column="0">
+     <property name="text">
+      <string>Z轴最大厚度</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="2" column="1">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="3" column="0">
+     <property name="text">
+      <string>Z轴最小厚度</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="3" column="1">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="4" column="0">
+     <property name="text">
+      <string>图像点数信息</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="4" column="1">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="5" column="0">
+     <property name="text">
+      <string>图像尺寸信息</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="5" column="1">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="output_data_2">
+    <property name="geometry">
+     <rect>
+      <x>1290</x>
+      <y>970</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>导出重构数据</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="output_information_2">
+    <property name="geometry">
+     <rect>
+      <x>1608</x>
+      <y>970</y>
+      <width>91</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>导出信息</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="show_hide_axis_2">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>970</y>
+      <width>81</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>显示坐标轴</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="screen_shot">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>970</y>
+      <width>71</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>最大化</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_generate_img_2">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>970</y>
+      <width>121</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>生成成像</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_reload_img_2">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>970</y>
+      <width>121</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>重载成像</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_init_2">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>970</y>
+      <width>111</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>清空窗体</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_6" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>261</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>231</width>
+       <height>341</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_16">
+      <item>
+       <widget class="QPushButton" name="output_data_3">
+        <property name="text">
+         <string>导入数据</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="output_data_4">
+        <property name="text">
+         <string>导入参比</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_15">
+          <item>
+           <widget class="QRadioButton" name="rbtn_transmission_2">
+            <property name="text">
+             <string>透射成像</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rbtn_reflex_2">
+            <property name="text">
+             <string>反射成像</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_34">
+          <item>
+           <widget class="QRadioButton" name="rbtn_old_data_2">
+            <property name="text">
+             <string>原始数据</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rbtn_new_data_2">
+            <property name="text">
+             <string>重构数据</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_59">
+        <item>
+         <widget class="QLabel" name="label_20">
+          <property name="text">
+           <string>折射率：</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="t_refractive_2">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_60">
+        <item>
+         <widget class="QLabel" name="label_21">
+          <property name="text">
+           <string>X步长：</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="t_x_step_2">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_61">
+        <item>
+         <widget class="QLabel" name="label_34">
+          <property name="text">
+           <string>Y步长：</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="t_y_step_2">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_62">
+        <item>
+         <widget class="QLabel" name="label_35">
+          <property name="text">
+           <string>Z步长：</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="t_z_step_2">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="screen_shot_2">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>970</y>
+      <width>71</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>截图</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>430</y>
+      <width>271</width>
+      <height>591</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>1030</y>
+      <width>1711</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="output_information_3">
+    <property name="geometry">
+     <rect>
+      <x>1530</x>
+      <y>970</y>
+      <width>71</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>清空</string>
+    </property>
+   </widget>
+   <widget class="GLViewWidget" name="openGLWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>20</y>
+      <width>1081</width>
+      <height>941</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1845</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action1"/>
+    <addaction name="action2"/>
+    <addaction name="separator"/>
+    <addaction name="action3"/>
+    <addaction name="action4"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <addaction name="action55"/>
+    <addaction name="action66"/>
+    <addaction name="separator"/>
+    <addaction name="action7"/>
+    <addaction name="action8"/>
+    <addaction name="separator"/>
+    <addaction name="action9"/>
+    <addaction name="separator"/>
+    <addaction name="action55_2"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="action33"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>显示设置</string>
+    </property>
+    <addaction name="action11"/>
+    <addaction name="action22"/>
+    <addaction name="separator"/>
+    <addaction name="action33_2"/>
+    <addaction name="action33_3"/>
+    <addaction name="separator"/>
+    <addaction name="action44"/>
+    <addaction name="action44_2"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_5"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action7"/>
+   <addaction name="action8"/>
+   <addaction name="action33_2"/>
+   <addaction name="action33_3"/>
+   <addaction name="action44"/>
+   <addaction name="action44_2"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_9"/>
+   <addaction name="action_10"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_3">
+   <property name="windowTitle">
+    <string>toolBar_3</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_11"/>
+   <addaction name="action_12"/>
+  </widget>
+  <action name="action1">
+   <property name="text">
+    <string>导入数据</string>
+   </property>
+  </action>
+  <action name="action2">
+   <property name="text">
+    <string>导入参比</string>
+   </property>
+  </action>
+  <action name="action3">
+   <property name="text">
+    <string>导出数据</string>
+   </property>
+  </action>
+  <action name="action4">
+   <property name="text">
+    <string>导出重构数据</string>
+   </property>
+  </action>
+  <action name="action33">
+   <property name="text">
+    <string>关于此系统</string>
+   </property>
+  </action>
+  <action name="action55">
+   <property name="text">
+    <string>显示设置</string>
+   </property>
+  </action>
+  <action name="action66">
+   <property name="text">
+    <string>界面风格</string>
+   </property>
+  </action>
+  <action name="action7">
+   <property name="text">
+    <string>二维窗体</string>
+   </property>
+  </action>
+  <action name="action8">
+   <property name="text">
+    <string>三维窗体</string>
+   </property>
+  </action>
+  <action name="action9">
+   <property name="text">
+    <string>坐标轴</string>
+   </property>
+  </action>
+  <action name="action11">
+   <property name="text">
+    <string>三维窗体</string>
+   </property>
+  </action>
+  <action name="action22">
+   <property name="text">
+    <string>二维窗体</string>
+   </property>
+  </action>
+  <action name="action33_2">
+   <property name="text">
+    <string>XZ/YZ窗体</string>
+   </property>
+  </action>
+  <action name="action33_3">
+   <property name="text">
+    <string>XY窗体</string>
+   </property>
+  </action>
+  <action name="action44">
+   <property name="text">
+    <string>时域谱窗体</string>
+   </property>
+  </action>
+  <action name="action44_2">
+   <property name="text">
+    <string>频域谱窗体</string>
+   </property>
+  </action>
+  <action name="action55_2">
+   <property name="text">
+    <string>默认设置</string>
+   </property>
+  </action>
+  <action name="action_9">
+   <property name="text">
+    <string>三维切片</string>
+   </property>
+  </action>
+  <action name="action_10">
+   <property name="text">
+    <string>图像色彩</string>
+   </property>
+  </action>
+  <action name="action_11">
+   <property name="text">
+    <string>样品信息计算</string>
+   </property>
+  </action>
+  <action name="action_12">
+   <property name="text">
+    <string>图像降噪</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GLViewWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header location="global">pyqtgraph.opengl</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
